@@ -1,0 +1,52 @@
+@import "../../Styles/Constants.css";
+
+.amount_main_container {
+  padding: 10px 20px 0 20px;
+}
+
+.amount_main_container label,
+.amount_main_container input {
+  display: block;
+}
+
+/* hi  */
+.amount_main_container label {
+  color: var(--primary-clr-1);
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.amount_main_container input {
+  border: 2px solid var(--primary-clr-3);
+  border-radius: 6px;
+  color: var(--primary-clr-1);
+  font-size: 18px;
+  outline: 3px solid #ffffff00;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  width: 50%;
+}
+
+.amount_main_container input:focus {
+  outline-color: var(--primary-clr-4);
+}
+
+.error_text {
+  color: red;
+  visibility: hidden;
+}
+
+.amount_main_container input:invalid {
+  background-color: rgb(255, 237, 237);
+  border-color: rgb(251, 170, 170);
+}
+
+.amount_main_container input:invalid~.error_text {
+  visibility: visible;
+}
+
+@media screen and (max-width: 767px) {
+  .amount_main_container label {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,13 @@
+button.exit {
+    background-color: rgb(213, 95, 95);
+    border-color: rgb(215, 80, 80) !important;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+button.save,
+button.add {
+    background-color: cornflowerblue;
+    color: #ffffff;
+    font-weight: 600;
+}

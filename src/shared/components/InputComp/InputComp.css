@@ -1,0 +1,89 @@
+@import "../../Styles/Constants.css";
+
+.field_main_container {
+  padding: 10px 15px 7px 15px;
+}
+
+table tr td .field_main_container {
+  padding: 0;
+}
+
+.field_main_container label,
+.field_main_container .input_wrapper .input {
+  display: block;
+}
+
+.field_main_container label {
+  color: var(--primary-clr-1);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.field_main_container .input_wrapper {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.field_main_container .input_wrapper input.input {
+  border: 2px solid var(--primary-clr-3);
+  border-radius: 6px;
+  color: var(--primary-clr-1);
+  font-size: 16px;
+  outline: 3px solid #ffffff00;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+
+
+.field_main_container .input_wrapper input.input:focus {
+  outline-color: var(--primary-clr-4);
+}
+
+.error_text {
+  color: red;
+  display: block;
+  min-height: 1ch;
+  width: 100%;
+}
+
+form.showErrors .input_wrapper input.input:invalid~.error_text {
+  visibility: visible;
+}
+
+form.showErrors .input_wrapper input.input:invalid {
+  background-color: rgb(255, 237, 237);
+  border-color: rgb(251, 170, 170);
+}
+
+.field_main_container .input_wrapper .helper_text_right {
+  font-size: 18px;
+  position: absolute;
+  right: 5%;
+  top: 12px;
+}
+
+.field_main_container .input_wrapper .helper_text_left {
+  font-size: 18px;
+  left: 2%;
+  position: absolute;
+  top: 12px;
+}
+
+.field_main_container .input_wrapper .helper_text_left+input.input {
+  padding-left: 13%;
+}
+
+@media screen and (max-width: 767px) {
+  .field_main_container label {
+    font-size: 14px;
+  }
+}
+
+.field_main_container label b.required {
+  color: red;
+}

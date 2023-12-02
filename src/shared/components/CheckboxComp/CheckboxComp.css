@@ -1,0 +1,33 @@
+/* checkbox styles  */
+.field_main_container.checkBox_main_container input.checkbox {
+    grid-column: span 2;
+    height: 20px;
+    width: 20px;
+
+}
+
+
+.field_main_container.checkBox_main_container {
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+}
+
+.field_main_container.checkBox_main_container label {
+    grid-column: span 7;
+}
+
+form.showErrors .field_main_container.checkBox_main_container input.checkbox:invalid {
+    border-color: rgb(251, 170, 170) !important;
+    outline: 3px solid rgb(251, 170, 170) !important;
+}
+
+
+.field_main_container.checkBox_main_container .error_text {
+    grid-column: span 10;
+}
+
+form.showErrors .field_main_container.checkBox_main_container input.checkbox:invalid~.error_text {
+    visibility: visible;
+}
+
+/* checkbox styles - END  */

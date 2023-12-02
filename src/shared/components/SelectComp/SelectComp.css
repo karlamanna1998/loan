@@ -1,0 +1,27 @@
+.field_main_container select {
+    display: block;
+}
+
+.field_main_container select {
+    border: 2px solid var(--primary-clr-3);
+    border-radius: 6px;
+    color: var(--primary-clr-1);
+    font-size: 16px;
+    outline: 3px solid #ffffff00;
+    padding: 10px;
+    transition: all.2s ease-in-out;
+    width: 100%;
+}
+
+.field_main_container select:focus {
+    outline-color: var(--primary-clr-4);
+}
+
+form.showErrors .field_main_container select:invalid {
+    background-color: rgb(255, 237, 237);
+    border-color: rgb(251, 170, 170);
+}
+
+form.showErrors select:invalid~.error_text {
+    visibility: visible;
+}
